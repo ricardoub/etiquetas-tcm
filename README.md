@@ -44,7 +44,6 @@ composer require laravel/ui
 php artisan ui vue --auth
 npm install
 npm run dev
-php artisan migrate
 git add .
 git commit -m "laravel ui install"
 git push -u origin main
@@ -55,7 +54,7 @@ git push -u origin main
 npm install --save bootstrap jquery popper.js
 npm install --save @fortawesome/fontawesome-free
 
-edit file [app.scss]
+edit file [resources/sass/app.scss]
   $fa-font-path: "../webfonts";
   
   @import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
@@ -63,16 +62,12 @@ edit file [app.scss]
   @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 
 npm run dev
-npm run watch
+git add .
+git commit -m "laravel ui install"
+git push -u origin main
 ```
 
-### Steps used to switch namespace of models
-Follow the tutorial at: https://kallbuloso.com.br/amaralkarl/alterar-o-diretorio-padrao-dos-models-no-laravel/
 
-### 
-```
-
-```
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
