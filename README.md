@@ -63,7 +63,7 @@ edit file [resources/sass/app.scss]
 
 npm run dev
 git add .
-git commit -m "laravel ui install"
+git commit -m "dependencies install - bootstrap, jquery, popper, font awesome"
 git push -u origin main
 ```
 
