@@ -8,16 +8,50 @@
 ## To create this project I did the following steps
 
 ### Steps to create the Laravel project:
+```bash
+composer create-project laravel/laravel --prefer-dist etiquetas-tcm
 ```
-composer create-project laravel/laravel --prefer-dist project-name
+
+#### First commmit - repository
+
+```bash
+cd etiquetas-tcm
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ricardoub/etiquetas-tcm.git
+git push -u origin main
+```
+
+#### first commit - LARAVEL install
+
+```bash
+npm install
+npm install cross-env
+npm run dev
+npm run prod
+php artisan migrate
+git add .
+git commit -m "FIRST COMMIT: laravel install"
+git push -u origin main
+```
+
+### Steps to install the Laravel UI:
+
+```bash
 composer require laravel/ui
 php artisan ui vue --auth
 npm install
 npm run dev
+php artisan migrate
+git add .
+git commit -m "laravel ui install"
+git push -u origin main
 ```
 
 ### Steps used to install basic project dependencies
-```
+```bash
 npm install --save bootstrap jquery popper.js
 npm install --save @fortawesome/fontawesome-free
 
